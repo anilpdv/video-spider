@@ -3,7 +3,7 @@ const program = require('commander');
 const chalk = require('chalk');
 const {get_movie} = require('./app');
 
-program.version('1.0.1').description('video-spider');
+program.version('1.0.2').description('video-spider');
 
 // : generates random quote
 program

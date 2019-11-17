@@ -1,7 +1,7 @@
 {
   "name": "video-spider",
   "description": "generates movie link with imdb id",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "commands.js",
   "preferGlobal": true,
@@ -18,5 +18,9 @@
     "commander": "^4.0.1",
     "open": "^7.0.0",
     "public-ip": "^3.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anilpdv/video-spider"
   }
 }
