@@ -1,0 +1,22 @@
+{
+  "name": "video-spider",
+  "description": "generates movie link with imdb id",
+  "version": "1.0.0",
+  "description": "",
+  "main": "commands.js",
+  "preferGlobal": true,
+  "bin": "./commands.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "chalk": "^3.0.0",
+    "commander": "^4.0.1",
+    "open": "^7.0.0",
+    "public-ip": "^3.2.0"
+  }
+}
