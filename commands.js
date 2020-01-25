@@ -13,7 +13,14 @@ program.version("2.0.1").description("video-spider");
 
 if (
   !process.argv.includes(
-    "watch" || "w" || "id" || "imdbid" || "--help" || "-V" || "-version" || "-h"
+    "watch" ||
+      "w" ||
+      "id" ||
+      "imdbid" ||
+      "--help" ||
+      "-V" ||
+      "--version" ||
+      "-h"
   )
 ) {
   console.log(chalk.red(" 😥 please provide required option"));
