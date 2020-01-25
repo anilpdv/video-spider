@@ -5,6 +5,9 @@
 video-spider is cli for generating movie links based on imdb ids.
 
 ```sh
+$ npm i -g video-spider 
+```
+```sh
 $ video-spider -h
 Usage: commands [options] [command]
 
