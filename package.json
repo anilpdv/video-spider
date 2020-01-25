@@ -1,8 +1,7 @@
 {
   "name": "video-spider",
-  "description": "generates movie link with imdb id",
-  "version": "1.0.2",
   "description": "",
+  "version": "2.0.0",
   "main": "commands.js",
   "preferGlobal": true,
   "bin": "./commands.js",
@@ -15,12 +14,17 @@
   "dependencies": {
     "axios": "^0.19.0",
     "chalk": "^3.0.0",
+    "cli-spinner": "^0.2.10",
     "commander": "^4.0.1",
+    "inquirer": "^7.0.4",
     "open": "^7.0.0",
     "public-ip": "^3.2.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/anilpdv/video-spider"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0"
   }
 }
