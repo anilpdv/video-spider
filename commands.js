@@ -9,20 +9,20 @@ spinner.setSpinnerString("⣾⣽⣻⢿⡿⣟⣯⣷");
 
 const { get_movie, get_movie_list, getMovieById } = require("./app");
 
-program.version("2.0.2").description("video-spider");
+const commands = [
+  "watch",
+  "w",
+  "id",
+  "imdbid",
+  "--help",
+  "-V",
+  "--version",
+  "-h"
+];
 
-if (
-  !process.argv.includes(
-    "watch" ||
-      "w" ||
-      "id" ||
-      "imdbid" ||
-      "--help" ||
-      "-V" ||
-      "--version" ||
-      "-h"
-  )
-) {
+program.version("2.0.3").description("video-spider");
+
+if (!commands.includes(process.argv[2])) {
   console.log(chalk.red(" 😥 please provide required option"));
   console.log(`
   Usage: commands [options] [command]
@@ -34,20 +34,20 @@ if (
     -h, --help           output usage information
   
   Commands:
-    watch|w <watch>      get movies list by search, and generate movie link
+    watch|w <title>      get movies list by search, and generate movie link
     imdbid|id <videoId>  gets the movie link
     `);
 }
 
 // : get list of movies
 program
-  .command("watch <watch>")
+  .command("watch <title>")
   .alias("w")
   .description(chalk.blue("get movies list by search, and generate movie link"))
-  .action(async watch => {
+  .action(async title => {
     try {
       spinner.start();
-      const { questions, movies } = await get_movie_list(watch);
+      const { questions, movies } = await get_movie_list(title);
       spinner.stop(true);
 
       prompt(questions)
