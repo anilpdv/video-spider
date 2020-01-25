@@ -1,7 +1,7 @@
 {
   "name": "video-spider",
   "description": "",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "main": "commands.js",
   "preferGlobal": true,
   "bin": "./commands.js",
