@@ -17,9 +17,9 @@ exports.get_movie = async videoId => {
     spinner.start();
     const res = await axios.get(ticketUrl);
     await spinner.stop(true);
-    console.log(chalk.italic.blue(`😊 ticket : ${res.data}`));
+    console.log(chalk.italic.blue(`ticket : ${res.data}`));
     const url = `https://videospider.stream/getvideo?key=${key}&video_id=${videoId}&ticket=${res.data}`;
-    console.log(chalk.yellowBright(`🍕 ${url}`));
+    console.log(chalk.yellowBright(`${url}`));
     await open(url);
   } catch (err) {
     console.log("error", err.response.data);
@@ -39,7 +39,7 @@ exports.get_movie_list = async query => {
       spinner.stop(true);
       console.log(
         chalk.red(
-          `😥 ${res.data.Error}, please use quotes to search movies eg: 'the irishman'`
+          `${res.data.Error}, please use quotes to search movies eg: 'the irishman'`
         )
       );
       return null;

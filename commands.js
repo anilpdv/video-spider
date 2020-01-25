@@ -20,7 +20,7 @@ const commands = [
   "-h"
 ];
 
-program.version("2.0.3").description("video-spider");
+program.version("2.0.4").description("video-spider");
 
 if (!commands.includes(process.argv[2])) {
   console.log(chalk.red(" 😥 please provide required option"));
