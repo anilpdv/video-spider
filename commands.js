@@ -9,7 +9,7 @@ spinner.setSpinnerString("⣾⣽⣻⢿⡿⣟⣯⣷");
 
 const { get_movie, get_movie_list, getMovieById } = require("./app");
 
-program.version("2.0.1").description("video-spider");
+program.version("2.0.2").description("video-spider");
 
 if (
   !process.argv.includes(
