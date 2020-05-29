@@ -1,7 +1,4 @@
 # video-spider
-
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
 video-spider is cli for generating movie links based on imdb ids.
 
 ```sh
